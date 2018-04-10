@@ -4,9 +4,12 @@ Hadoop installation steps in mac
 ## 1. Install Hadoop 3.0.0
 ## 2. Cd to Hadoop Folder to configure hadoop environment. Configuration files locations In linux: /usr/local/Cellar/hadoop/3.0.0/libexec/etc/hadoop
 ### 1. Open hadoop-env.sh and comment out below line
+```xml
    #export HADOOP_OPTS="-Djava.net.preferIPv4Stack=true -Dsun.security.krb5.debug=true -Dsun.security.spnego.debug"
-
+```xml
 ### 2. Open core-site.xml and add below data:
+
+```xml
 <configuration>
   <property>
     <name>hadoop.tmp.dir</name>
@@ -18,7 +21,9 @@ Hadoop installation steps in mac
     <value>hdfs://localhost:9000</value>
   </property>
 </configuration>
+```xml
 ### 3. Open hdfs-site.xml and add below data:
+```xml
 <configuration>
 
   <property>
@@ -26,9 +31,10 @@ Hadoop installation steps in mac
    <value>1</value>
    <description> How many copies of data our hadoop will have. Value defines how many copies </description>
   </property>
-
 </configuration>
+```xml
 ### 4. Open marred-site.xml and add below data:
+```xml
 <configuration>
   <property>
     <name>mapred.job.tracker</name>
@@ -36,15 +42,17 @@ Hadoop installation steps in mac
     <description> Mapreduce - maps the data and reduces that data to give it to you. This is done by deamon. This tracks all jobs running in hadoop cluster. </description>
    </property>
 </configuration>
-### 5. Below commands to start or stop the hadoop. 
-alias hstart = '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
-alias hstop = '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'
+```xml
+### 5. start or stop the hadoop. 
+
+Start - '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
+Stop - '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'
 
 
-Note: If u get error like permission denied at sept5, create a ssh key with no password!! 
+#Note: If u get error like permission denied at sept5, create a ssh key with no password!! 
 
 
-Output after succesful hadoop installation looks like below:
+#Output after succesful hadoop installation looks like below:
 
 krishnas-mbp:sbin krishna.damarla$ ./start-dfs.sh 
 Starting namenodes on [localhost]
