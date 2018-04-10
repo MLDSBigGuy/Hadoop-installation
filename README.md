@@ -61,3 +61,12 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 2018-04-10 14:14:40,129 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 ```
 (Last message is just a warning. Can be neglected) 
+
+### jps in cmd show all the process running as below:
+```xml
+898 
+9493 DataNode
+10553 Jps
+9630 SecondaryNameNode
+9391 NameNode
+```xml
