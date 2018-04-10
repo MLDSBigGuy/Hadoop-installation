@@ -1,12 +1,12 @@
 # Hadoop-installation
 Hadoop installation steps in mac 
 
-##1. Install Hadoop 3.0.0
-##2. Cd to Hadoop Folder to configure hadoop environment. Configuration files locations In linux: /usr/local/Cellar/hadoop/3.0.0/libexec/etc/hadoop
-###1. Open hadoop-env.sh and comment out below line
+## 1. Install Hadoop 3.0.0
+## 2. Cd to Hadoop Folder to configure hadoop environment. Configuration files locations In linux: /usr/local/Cellar/hadoop/3.0.0/libexec/etc/hadoop
+### 1. Open hadoop-env.sh and comment out below line
    #export HADOOP_OPTS="-Djava.net.preferIPv4Stack=true -Dsun.security.krb5.debug=true -Dsun.security.spnego.debug"
 
-###2. Open core-site.xml and add below data:
+### 2. Open core-site.xml and add below data:
 <configuration>
   <property>
     <name>hadoop.tmp.dir</name>
@@ -18,7 +18,7 @@ Hadoop installation steps in mac
     <value>hdfs://localhost:9000</value>
   </property>
 </configuration>
-###3. Open hdfs-site.xml and add below data:
+### 3. Open hdfs-site.xml and add below data:
 <configuration>
 
   <property>
@@ -28,7 +28,7 @@ Hadoop installation steps in mac
   </property>
 
 </configuration>
-###4. Open marred-site.xml and add below data:
+### 4. Open marred-site.xml and add below data:
 <configuration>
   <property>
     <name>mapred.job.tracker</name>
@@ -36,7 +36,7 @@ Hadoop installation steps in mac
     <description> Mapreduce - maps the data and reduces that data to give it to you. This is done by deamon. This tracks all jobs running in hadoop cluster. </description>
    </property>
 </configuration>
-###5. Below commands to start or stop the hadoop. 
+### 5. Below commands to start or stop the hadoop. 
 alias hstart = '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
 alias hstop = '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'
 
