@@ -69,4 +69,4 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 10553 Jps
 9630 SecondaryNameNode
 9391 NameNode
-```xml
+```
