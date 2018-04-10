@@ -45,14 +45,14 @@ Hadoop installation steps in mac
 ```
 ### 5. start or stop the hadoop. 
 
-Start - '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
-Stop - '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'
+- Start - '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
+- Stop - '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'
 
 
-#Note: If u get error like permission denied at sept5, create a ssh key with no password!! 
+# Note: If u get error like permission denied at sept5, create a ssh key with no password!! 
 
 
-#Output after succesful hadoop installation looks like below:
+# Output after succesful hadoop installation looks like below:
 
 krishnas-mbp:sbin krishna.damarla$ ./start-dfs.sh 
 Starting namenodes on [localhost]
