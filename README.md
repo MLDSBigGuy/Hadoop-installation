@@ -33,7 +33,7 @@ Hadoop installation steps in mac
   </property>
 </configuration>
 ```
-### 4. Open marred-site.xml and add below data:
+### 4. Open mapred-site.xml and add below data:
 ```xml
 <configuration>
   <property>
