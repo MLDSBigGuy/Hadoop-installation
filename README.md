@@ -6,7 +6,7 @@ Hadoop installation steps in mac
 ### 1. Open hadoop-env.sh and comment out below line
 ```xml
    #export HADOOP_OPTS="-Djava.net.preferIPv4Stack=true -Dsun.security.krb5.debug=true -Dsun.security.spnego.debug"
-```xml
+```
 ### 2. Open core-site.xml and add below data:
 
 ```xml
@@ -21,7 +21,7 @@ Hadoop installation steps in mac
     <value>hdfs://localhost:9000</value>
   </property>
 </configuration>
-```xml
+```
 ### 3. Open hdfs-site.xml and add below data:
 ```xml
 <configuration>
@@ -32,7 +32,7 @@ Hadoop installation steps in mac
    <description> How many copies of data our hadoop will have. Value defines how many copies </description>
   </property>
 </configuration>
-```xml
+```
 ### 4. Open marred-site.xml and add below data:
 ```xml
 <configuration>
@@ -42,7 +42,7 @@ Hadoop installation steps in mac
     <description> Mapreduce - maps the data and reduces that data to give it to you. This is done by deamon. This tracks all jobs running in hadoop cluster. </description>
    </property>
 </configuration>
-```xml
+```
 ### 5. start or stop the hadoop. 
 
 Start - '/usr/local/Cellar/hadoop/3.0.0/sbin/start-dfs.sh'
