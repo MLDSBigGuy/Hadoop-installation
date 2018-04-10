@@ -62,7 +62,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 ```
 (Last message is just a warning. Can be neglected) 
 
-### jps in cmd show all the process running as below:
+### jps in terminal shows all the processes running as below:
 ```xml
 898 
 9493 DataNode
