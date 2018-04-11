@@ -13,6 +13,7 @@ Hadoop installation steps in mac
 ```xml
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
   export HADOOP_PREFIX=/usr/local/Cellar/hadoop/3.0.0
+  If using jdk 9, add export HADOOP_OPTS="--add-modules java.activation"
 ```
 ### 2. Open core-site.xml and add below data:
 
@@ -87,7 +88,6 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - From hadoop 3.0.0, 
     - Namenode moved from http://localhost:50070 to http://localhost:9870 
     - Datanode moved to http://localhost:9864
-    - Secondary NN moved to http://localhost:9868
 - For other ports info, [check this](https://issues.apache.org/jira/browse/HDFS-9427?focusedCommentId=15156476&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-15156476)
  - Namenode ports: 50470 --> 9871, 50070 --> 9870, 8020 --> 9820
  - Secondary NN ports: 50091 --> 9869, 50090 --> 9868
