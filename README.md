@@ -83,10 +83,14 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 9630 SecondaryNameNode
 9391 NameNode
 ```
-URLs:
- - From hadoop 3.0.0, http://localhost:50070 was moved to http://localhost:9870. [see this](https://issues.apache.org/jira/browse/HDFS-9427?focusedCommentId=15156476&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-15156476)
+### URLs:
+- From hadoop 3.0.0, 
+    - Namenode moved from http://localhost:50070 to http://localhost:9870 
+    - Datanode moved to http://localhost:9864
+    - Secondary NN moved to http://localhost:9868
+- For other ports info, [check this](https://issues.apache.org/jira/browse/HDFS-9427?focusedCommentId=15156476&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-15156476)
  - Namenode ports: 50470 --> 9871, 50070 --> 9870, 8020 --> 9820
- -  Secondary NN ports: 50091 --> 9869, 50090 --> 9868
+ - Secondary NN ports: 50091 --> 9869, 50090 --> 9868
  - Datanode ports: 50020 --> 9867, 50010 --> 9866, 50475 --> 9865, 50075 --> 9864
 
 
