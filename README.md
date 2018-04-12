@@ -66,7 +66,7 @@ Hadoop installation steps in mac
 - Stop - '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-dfs.sh'   or    '/usr/local/Cellar/hadoop/3.0.0/sbin/stop-all.sh'
 
 
-### Output after succesful hadoop installation looks like below:
+## Output after succesful hadoop installation looks like below:
 ```xml
 krishnas-mbp:sbin krishna.damarla$ ./start-dfs.sh 
 Starting namenodes on [localhost]
@@ -76,7 +76,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 ```
 (Last message is just a warning. Can be neglected) 
 
-### jps in terminal shows all the processes running as below:
+## jps in terminal shows all the processes running as below:
 ```xml
 898 
 9493 DataNode
@@ -84,7 +84,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 9630 SecondaryNameNode
 9391 NameNode
 ```
-### URLs:
+## URLs:
 - From hadoop 3.0.0, 
     - Namenode moved from http://localhost:50070 to http://localhost:9870 
     - Datanode moved to http://localhost:9864
@@ -98,6 +98,6 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - Create dir - bin/hadoop dfs -mkdir /input 
 - List files in hdfs - hdfs dfs -ls /
 
-
-
-Reference: - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
+## References: 
+- https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
+- http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
