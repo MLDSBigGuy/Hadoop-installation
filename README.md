@@ -93,5 +93,11 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
  - Secondary NN ports: 50091 --> 9869, 50090 --> 9868
  - Datanode ports: 50020 --> 9867, 50010 --> 9866, 50475 --> 9865, 50075 --> 9864
 
+### Create files in Hadoop
+
+- Create dir - bin/hadoop dfs -mkdir /input 
+- List files in hdfs - hdfs dfs -ls /
+
+
 
 Reference: - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
