@@ -108,7 +108,12 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
   - Read file is 2 step process 
     - locate all split up files
     - [read files](https://github.com/MLDSBigGuy/Hadoop-installation/blob/master/Screen%20Shot%202018-04-12%20at%2010.05.18.png)
-    
+- Access hadoop through cmd line (make sure u r located at /usr/local/Cellar/hadoop/3.0.0 always) 
+  - bin/hadoop fs -help (Gives all cmds u can try on hadoop) or bin/hdfs dfs -help
+  - we focus on -mkdir (create a dir)
+    - bin/hadoop fs -mkdir /test
+    - bin/hadoop fs -mkdir /test/subdir (create subdir)
+    - bin/hadoop fs -ls /test (List all files in test folder) 
 
 ## References: 
 - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
