@@ -114,8 +114,9 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
     - bin/hadoop fs -mkdir /test
     - bin/hadoop fs -mkdir /test/subdir (create subdir)
     - bin/hadoop fs -ls /test (List all files in test folder) 
+    - Copy data from file hadoop-env.sh to hdfs test with copyFromLocal/put cmd: bin/hadoop fs -copyFromLocal ./libexec/etc/hadoop/hadoop-env.sh /test
   - Incase of errors, https://stackoverflow.com/a/29981409/3992695
-  - Copy data from file hadoop-env.sh to hdfs test file with copyFromLocal cmd: bin/hadoop fs -copyFromLocal ./libexec/etc/hadoop/hadoop-env.sh /test
+  
 
 ## References: 
 - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
