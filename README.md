@@ -107,7 +107,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
   - time taken to read block of data, time taken to seek block and time taken to read data. Optimum ratio is maintained with 128mb
   - Read file is 2 step process 
     - locate all split up files
-    - read files 
+    - [read files](https://github.com/MLDSBigGuy/Hadoop-installation/blob/master/Screen%20Shot%202018-04-12%20at%2010.05.18.png)
     
 
 ## References: 
