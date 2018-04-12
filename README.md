@@ -103,6 +103,12 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
   Namenode responsibilites: No data is read from node. Any req from client is passed to namenode. It knows while file located in which node. Any permissions/ how file split up, where is the replica of file
   - Datanode stores unformated/unstructured data
 - Storing data in hdfs
+  - best file size in a block is 128mb
+  - time taken to read block of data, time taken to seek block and time taken to read data. Optimum ratio is maintained with 128mb
+  - Read file is 2 step process 
+    - locate all split up files
+    - read files 
+    
 
 ## References: 
 - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
