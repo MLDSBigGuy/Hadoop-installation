@@ -93,10 +93,16 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
    - Secondary NN ports: 50091 --> 9869, 50090 --> 9868
    - Datanode ports: 50020 --> 9867, 50010 --> 9866, 50475 --> 9865, 50075 --> 9864
 
-### Create files in Hadoop
+### Create/store files in Hadoop
 
 - Create dir - bin/hadoop dfs -mkdir /input 
 - List files in hdfs - hdfs dfs -ls /
+- Submit a map reduce job: https://app.pluralsight.com/player?course=building-blocks-hadoop-hdfs-mapreduce-yarn&author=janani-ravi&name=building-blocks-hadoop-hdfs-mapreduce-yarn-m2&clip=6&mode=live
+- 1 hadoop cluster can have One name node, many data nodes
+  - If data in hdfs is considered as book, namenode is table of contents, chapters/content in book are datanodes 
+  Namenode responsibilites: No data is read from node. Any req from client is passed to namenode. It knows while file located in which node. Any permissions/ how file split up, where is the replica of file
+  - Datanode stores unformated/unstructured data
+- Storing data in hdfs
 
 ## References: 
 - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
