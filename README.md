@@ -137,7 +137,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 
 
 ## Issues/Common workarounds if namenode/datanode stops working:
-- InconsistentFSStateException, di .doesnot exists: edit hdfs-site.xml by creating a tmp folder: https://www.youtube.com/watch?v=Gsr73K-7zN8
+- InconsistentFSStateException, dir doesnot exists: edit hdfs-site.xml by creating a tmp folder: https://www.youtube.com/watch?v=Gsr73K-7zN8
 - kill 9234
 - clear tmp cache at loc: /tmp/
 - hadoop namenode -format
