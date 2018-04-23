@@ -41,8 +41,13 @@ Hadoop installation steps in mac
   </property>
 
   <property>
-     <name>dfs.datanode.data.dir</name>
-     <value>file:/usr/local/Cellar/hadoop/3.0.0/hadoop_tmp/namenode</value>
+     <name>dfs.datanode.name.dir</name>
+     <value>file:/usr/local/Cellar/hadoop/3.0.0/hadoop_tmp/datanode</value>
+  </property>
+
+  <property>
+    <name>dfs.permissions</name>
+    <value>false</value>
   </property>
 
 </configuration>
