@@ -95,6 +95,8 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 9630 SecondaryNameNode
 9391 NameNode
 ```
+* Note: If any one of the node is not running when u start jps, refer issues at the end. 
+
 ## URLs:
 - From hadoop 3.0.0, 
     - Namenode moved from http://localhost:50070 to http://localhost:9870 
@@ -134,7 +136,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
 
 
-## Common workaround if namenode/datanode stps working:
+## Issues/Common workarounds if namenode/datanode stops working:
 - InconsistentFSStateException, di .doesnot exists: edit hdfs-site.xml by creating a tmp folder: https://www.youtube.com/watch?v=Gsr73K-7zN8
 - kill 9234
 - clear tmp cache at loc: /tmp/
