@@ -123,6 +123,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
 
 
-## Misc:
+## If hadoop stop working, try:
 - kill 9234
 - clear tmp cache at loc: /tmp/
+- hadoop namenode -format
