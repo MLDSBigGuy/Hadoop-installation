@@ -30,10 +30,21 @@ Hadoop installation steps in mac
 <configuration>
 
   <property>
-   <name>dfs.replication</name>
-   <value>1</value>
-   <description> How many copies of data our hadoop will have. Value defines how many copies </description>
+     <name>dfs.replication</name>
+     <value>1</value>
+     <description> How many copies of data our hadoop will have. Value defines how many copies </description>
   </property>
+
+  <property>
+     <name>dfs.namenode.name.dir</name>
+     <value>file:/usr/local/Cellar/hadoop/3.0.0/hadoop_tmp/namenode</value>
+  </property>
+
+  <property>
+     <name>dfs.datanode.data.dir</name>
+     <value>file:/usr/local/Cellar/hadoop/3.0.0/hadoop_tmp/namenode</value>
+  </property>
+
 </configuration>
 ```
 ### 4. Open mapred-site.xml and add below data:
