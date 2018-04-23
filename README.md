@@ -123,7 +123,8 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
 
 
-## If hadoop stop working, try:
+## Common workaround if namenode/datanode stps working:
+- InconsistentFSStateException, di .doesnot exists: edit hdfs-site.xml by creating a tmp folder: https://www.youtube.com/watch?v=Gsr73K-7zN8
 - kill 9234
 - clear tmp cache at loc: /tmp/
 - hadoop namenode -format
