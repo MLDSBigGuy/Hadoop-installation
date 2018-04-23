@@ -125,4 +125,4 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 
 ## Misc:
 - kill 9234
-- clear tmp cache at loc: tmp/hadoop-krishna.damarla/
+- clear tmp cache at loc: /tmp/
