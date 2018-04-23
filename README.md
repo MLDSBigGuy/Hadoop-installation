@@ -121,3 +121,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 ## References: 
 - https://www.tutorialspoint.com/hadoop/hadoop_enviornment_setup.htm
 - http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
+
+
+## Misc:
+kill 9234
