@@ -57,8 +57,8 @@ Hadoop installation steps in mac
 </configuration>
 ```
 
-### 6. Move to /usr/local/Cellar/hadoop/3.0.0 and start name node as 
-- bin/hadoop namenode -format 
+### 6.start name node 
+- /usr/local/Cellar/hadoop/3.0.0bin/hadoop namenode -format 
 
 ### 7. start or stop the hadoop. 
 
